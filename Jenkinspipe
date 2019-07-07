@@ -4,7 +4,7 @@ node {
    }
    
    stage('SCM Compile'){
-        sh "mv package"
+        sh "mvn package"
 	 }
       
 }
