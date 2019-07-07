@@ -7,4 +7,12 @@ node {
         sh "mvn package"
 	 }
       
+   stage('SCM Compile'){      
+      	mail bcc: '', body: '''Hi Team,
+	myfirst-pipeline app build is success
+
+	Regards
+	Build team.''', cc: 'sreeni.pgc@gmail.com', from: '', replyTo: '', subject: 'myfirst-pipeline app build is success', to: 'nagasreenivasa@cirruslabs.io'
+	}	
+      
 }
