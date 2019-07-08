@@ -1,1 +1,1 @@
-hello, reverted text
+hello
